@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!--NavBar-->
+    <nav class="nav collapsible">
+        <a class="nav__brand" href="/index.html"><img src="/images/logo.svg" alt=""></a>
+        <svg class="icon icon--white nav__toggler">
+            <use href="/icons/sprite.svg#menu"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+              <li class="nav__item"><a href="/hosting.html">Hosting</a></li>
+              <li class="nav__item"><a href="#">VPS</a></li>
+              <li class="nav__item"><a href="#">Domain</a></li>
+              <li class="nav__item"><a href="#">Pricing</a></li>
+          </ul>
+    </nav>
+
+    <!--HeroSection-->
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header data-aos="fade-right" class="block__header hero__content">
+                <h1 class="block__heading">Hosting</h1>
+                <p class="hero__tagline">Hosting description here.</p>
+                <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+            </header>
+            <picture data-aos="zoom-in-left">
+                <source
+                 type="image/webp" 
+                 srcset="images/banner.webp 1x, images/banner2x.webp 2x"
+                 >
+                 <source
+                 type="image/png" 
+                 srcset="images/banner.png 1x, images/banner2x.png 2x"
+                 >
+                <img class="hero__image" src="/images/banner.png" alt="">
+            </picture>
+        </div>
+    </section>
+
+    <!--Plan Section-->
+    <section class="block container block-plans">
+        <div data-aos="fade-up" class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$69</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <div class="plan__description">
+                            Easy start on the cloud
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list--item">Unlimited Websites</li>
+                            <li class="list--item">Unlimited Bandwidth</li>
+                            <li class="list--item">100 Gb SSD Storage</li>
+                            <li class="list--item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">BUY NOW</button>
+                     </div>
+                </div>
+            </div>
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$69</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <div class="plan__description">
+                            Easy start on the cloud
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list--item">Unlimited Websites</li>
+                            <li class="list--item">Unlimited Bandwidth</li>
+                            <li class="list--item">100 Gb SSD Storage</li>
+                            <li class="list--item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--primary btn--block">BUY NOW</button>
+                     </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="card card--secondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">Entry</h3>
+                        <span class="plan__price">$69</span>
+                        <span class="plan__billing-cycle">/month</span>
+                        <span class="badge badge--secondary badge--small">10% OFF</span>
+                        <div class="plan__description">
+                            Easy start on the cloud
+                        </div>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list--item">Unlimited Websites</li>
+                            <li class="list--item">Unlimited Bandwidth</li>
+                            <li class="list--item">100 Gb SSD Storage</li>
+                            <li class="list--item">3 GB RAM</li>
+                        </ul>
+                        <button class="btn btn--outline btn--block">BUY NOW</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+        <footer class="block block--dark footer">
+           <div class="block container grid footer__sections">
+                <section class="collapsible collapsible--expanded footer__section">
+                    <div class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Products</h2>
+                            <svg class="icon icon--white collapsible__chevron">
+                                <use href="/icons/sprite.svg#chevron"></use>
+                            </svg>
+                    </div>
+                    <div class="collapsible__content">
+                        <ul>
+                            <li><a href="#">Website Hosting</a></li>
+                            <li><a href="#">Free Automated Wordpress</a></li>
+                            <li><a href="#">Migrations</a></li>
+                        </ul>
+                    </div>  
+                 </section>
+           
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Company</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use href="/icons/sprite.svg#chevron"></use>
+                        </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Support</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use href="/icons/sprite.svg#chevron"></use>
+                        </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer__heading">Domains</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use href="/icons/sprite.svg#chevron"></use>
+                        </svg>
+                </div>
+                <div class="collapsible__content">
+                    <ul>
+                        <li><a href="#">Domain Checker</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Free Domain</a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="footer__brand container block">
+                <img src="/images/logo.svg" alt="">
+                <p class="footer__copywright">&copy;Copyright 2020 Lorem Lorem</p>
+            </div> 
+        </footer>
+
+    <script src="/js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+</html>
